@@ -28,6 +28,7 @@ step1 () {
 		echo "YOU WILL NOW BE PROMPTED TO SET THE USER PASSWORD!"
 		echo ""
 		sudo nixos-enter --root /mnt -c 'passwd niko'
+		sudo cp manual.txt /mnt/home/niko
 		clear
 		echo "congrats            "
 		echo "    \ /\_/\         "
@@ -36,6 +37,8 @@ step1 () {
 		echo "     (|| ||)_)      "
 		echo ""
 		echo "CONGRATULATIONS! You successfully installed NixOS!"
+		echo ""
+		echo "I have put a manual.txt file into your Home directory (the one that opens when you open the file manager) , pls read it"
 		echo ""
 		read -n 1 -s -r -p "Press any key to reboot... "
 		sudo reboot
