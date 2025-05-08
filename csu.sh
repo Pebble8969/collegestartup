@@ -47,3 +47,4 @@ step1 () {
 		step1
 	fi
 }
+step1
