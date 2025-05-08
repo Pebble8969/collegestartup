@@ -1,0 +1,9 @@
+This is the update manual for your NixOS installation.
+
+to update it right here, right now, type in:
+  sudo nixos-rebuild switch --upgrade
+
+to have the system update after a reboot, type in:
+  sudo nixos-rebuild boot --upgrade
+
+thats it, have fun! >w<
